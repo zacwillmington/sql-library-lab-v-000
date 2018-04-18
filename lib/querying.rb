@@ -32,7 +32,7 @@ FROM characters
 inner join series
 ON characters.series_id = series.id
 WHERE characters.species = 'human'
-ORDER BY series.title DESC LIMIT 1;"
+ORDER BY series.title ASC LIMIT 1;"
 end
 
 def select_character_names_and_number_of_books_they_are_in
